@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Neighbor';
+    src: url('fonts/Neighbor-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FF5C36;
+    color: #fff;
+    overflow-x: hidden !important;
+}
+
+.big-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translateY(80px); */
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon {
+    font-family: 'Neighbor';
+    font-size: 2rem;
+    text-align: center;
+}
+
+.image-logo {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+    display: block;
+}
+
+.title {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0px 0;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 20px 0;
+}
+
+.subtitle h2 {
+    font-weight: 300;
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 20px 10px;
+}
+
+.icon {
+    width: 4%; 
+    height: auto; 
+}
+
+
+
+
+/* forms style */
+#mc_embed_signup {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#mc_embed_signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mc_embed_signup input[type=email] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#mc_embed_signup input[type=submit] {
+    background-color: #CC71B8; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.asterisk {
+    color: rgb(193, 23, 23) !important;
+    font-size: 1.2rem;
+}
+
+.icon {
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.icon:hover {
+    transform: translateY(-5px); /* Moves the icon 5 pixels up on hover */
+}
+
+.klaviyo-form-RWA9bt label,
+.klaviyo-form-RWA9bt input {
+    color: #111 !important; /* Replace #yourColorCode with your desired color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablets (e.g., 768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 30px;
+    }
+
+    .coming-soon, .title {
+        font-size: 1.5rem;
+    }
+
+    .image-logo {
+        width: 300px;
+        height: 300px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .subtitle, .social a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile devices (less than 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .big-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 260px;
+    }
+
+    .image-logo {
+        width: 300px;
+        height: 300px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .coming-soon, .title {
+        font-size: 1.2rem;
+    }
+
+    .image-title {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+
+    
+
+    .subtitle, .social a {
+        font-size: 0.5rem;
+    }
+
+    .subtitle h2 {
+        font-weight: 300;
+    }
+
+    .icon {
+        width: 20px; /* Adjust icon size for smaller screens */
+    }
+
+    .klaviyo-form-RWA9bt {
+        width: 360px;
+    }
+}
+
+
+/* Media queries for the email form */
+/* Tablets (e.g., 768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #mc_embed_signup {
+        width: 80% ; /* Adjust width for tablet view */
+        margin: auto ; /* Center the form */
+        padding: 20px ;
+    }
+
+    .mc-field-group input[type="email"] {
+        width: calc(100% - 120px) ; /* Adjust width for email input */
+    }
+
+    #mc-embedded-subscribe {
+        width: 100px ; /* Adjust width for subscribe button */
+    }
+}
+
+/* Mobile devices (less than 768px) */
+@media screen and (max-width: 768px) {
+    #mc_embed_signup {
+        width: 100%; /* Full width on mobile */
+        margin: auto;
+        padding: 15px;
+    }
+
+    .mc-field-group {
+        display: block; /* Stack label, input, and button */
+    }
+
+    .mc-field-group label, .mc-field-group input[type="email"], #mc-embedded-subscribe {
+        width: 100%; /* Full width for all elements */
+        margin: 5px 0; /* Add some margin for spacing */
+    }
+
+    .mc-field-group input[type="email"] {
+        margin-bottom: 10px; /* Extra space above the button */
+    }
+
+    #mc-embedded-subscribe {
+        width: auto; /* Auto width for the button */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 610px) {
+
+    .container {
+        padding: 1px;
+    }
+
+    .big-container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 230px;
+    }
+
+    .indicates-required {
+        display: none;
+    }
+
+
+    #mc_embed_signup {
+        width: 100% !important; /* Slightly reduce width for padding */
+        padding: 20px;
+        font-size: 16px; /* Increase font size for better readability */
+    }
+
+    .mc-field-group {
+        display: block; /* Ensure elements are stacked */
+    }
+
+    .mc-field-group label {
+        display: block; /* Ensure label is above the input field */
+        margin-bottom: 5px; /* Add space between label and input */
+    }
+
+    .mc-field-group input[type="email"] {
+        width: 100%; /* Full width for input */
+        padding: 10px; /* Larger padding for easy touch interaction */
+        font-size: 16px; /* Larger font size for readability */
+        margin-bottom: 15px; /* Add space above the button */
+    }
+
+    #mc-embedded-subscribe {
+        width: 100%; /* Full width for the button */
+        padding: 10px; /* Larger padding for easy touch */
+        font-size: 16px; /* Increase font size for readability */
+    }
+
+    .indicates-required {
+        margin-bottom: 15px; /* Add space above input field */
+    }
+
+    .mc-field-group .helper_text {
+        font-size: 14px; /* Adjust helper text size if necessary */
+    }
+
+    .klaviyo-form-RWA9bt {
+        width: 360px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
